@@ -1,0 +1,13 @@
+# Protect PayFast credentials from direct browser access
+<Files "config.payfast.php">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+  </IfModule>
+</Files>
+
+# Prefer index.html for directory requests
+DirectoryIndex index.html index.php

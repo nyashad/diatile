@@ -1,0 +1,16 @@
+# PayFast credentials — never commit. Copy config.payfast.example.php on the server.
+config.payfast.php
+
+# Personal documents and unrelated design source files
+*.pdf
+*.docx
+*.ai
+D-birthday-party.png
+
+# Upload archives — the real files are tracked directly
+*.zip
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
